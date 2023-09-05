@@ -11,7 +11,7 @@ const Contact = () => {
       <div className='contact-container'>
         <div className='form-container'>
           <div>
-            <div className=''>
+            <div className='contact-row'>
               <div className='contact-box '>
                 <h2>
                   <SiGooglemaps />
@@ -24,12 +24,14 @@ const Contact = () => {
                 </h2>
                 <p>Crm.broker.dz@gmail.com</p>
               </div>
-              <div className='contact-box'>
-                <h2>
-                  <BsFillTelephoneFill />
-                </h2>
-                <p>0779.09.44.55 &nbsp; &nbsp; 0661.76.35.20</p>
-              </div>
+            </div>
+            <div className='contact-box contact-phone'>
+              <h2>
+                <BsFillTelephoneFill />
+              </h2>
+              <p>
+                0779.09.44.55 <br /> 0661.76.35.20
+              </p>
             </div>
           </div>
         </div>
