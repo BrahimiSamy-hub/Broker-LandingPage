@@ -1,56 +1,73 @@
+import { ImStatsBars } from 'react-icons/im'
+import { MdPersonSearch, MdVisibility } from 'react-icons/md'
+import { CgPerformance } from 'react-icons/cg'
+import { BiSolidReport } from 'react-icons/bi'
+import { FaFileInvoiceDollar } from 'react-icons/fa'
+
+const Data = [
+  {
+    id: '1',
+    title: 'La prospection',
+    icon: <MdPersonSearch />,
+  },
+  {
+    id: '2',
+    title: 'Gestion du plan de tournée',
+    icon: '',
+  },
+  {
+    id: '3',
+    title: 'Gestion des visites',
+    icon: <MdVisibility />,
+  },
+  {
+    id: '4',
+    title: 'Rapports des visite ',
+    icon: <BiSolidReport />,
+  },
+  {
+    id: '5',
+    title: 'Gestion des bons de commande',
+    icon: <FaFileInvoiceDollar />,
+  },
+  {
+    id: '6',
+    title: 'Gestion des notes de frais',
+    icon: '',
+  },
+  {
+    id: '7',
+    title: 'Des analyses Statistiques détaillées ',
+    icon: <ImStatsBars />,
+  },
+  {
+    id: '8',
+    title: 'Indicateur de performance ',
+    icon: <CgPerformance />,
+  },
+]
+
 const Fonctionalité = () => {
-  const Data = [
-    {
-      id: '1',
-      title: 'La prospection',
-      icon: '',
-    },
-    {
-      id: '2',
-      title: 'Gestion du plan de tournée',
-      icon: '',
-    },
-    {
-      id: '3',
-      title: 'Gestion des visites',
-      icon: '',
-    },
-    {
-      id: '4',
-      title: 'Rapports des visite ',
-      icon: '',
-    },
-    {
-      id: '5',
-      title: 'Gestion des bons de commande',
-      icon: '',
-    },
-    {
-      id: '6',
-      title: 'Gestion des notes de frais',
-      icon: '',
-    },
-    {
-      id: '7',
-      title: 'Des analyses Statistiques détaillées ',
-      icon: '',
-    },
-    {
-      id: '8',
-      title: 'Indicateur de performance ',
-      icon: '',
-    },
-  ]
   return (
-    <>
-      <div id='Fonctionalités'>Fonctionalité</div>
-      {Data.map((item) => (
-        <div key={item.id}>
-          <div>{item.icon}</div>
-          <p>{item.title}</p>
+    <section className=' Fonctionalités-section '>
+      <h1 className='primary-heading' id='Fonctionalités'>
+        Fonctionalités
+      </h1>
+      <div className='main'>
+        <div className='main-fonct'>
+          {/* data-aos='flip-up' */}
+          {Data.map((item) => (
+            <div className='card' key={item.id}>
+              <p className='heading'>
+                <i>{item.icon}</i>
+                <br />
+                {item.title}
+              </p>
+            </div>
+          ))}
         </div>
-      ))}
-    </>
+      </div>
+    </section>
   )
 }
 

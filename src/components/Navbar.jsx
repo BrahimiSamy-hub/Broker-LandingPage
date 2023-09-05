@@ -30,6 +30,10 @@ const Navbar = () => {
       icon: <CommentRoundedIcon />,
     },
     {
+      text: 'Devis',
+      icon: <CommentRoundedIcon />,
+    },
+    {
       text: 'Contact',
       icon: <PhoneRoundedIcon />,
     },
@@ -39,26 +43,27 @@ const Navbar = () => {
     },
   ]
   return (
-    <nav>
+    <nav id='Acceuil'>
       <div className='nav-logo-container'>
         {/* <img src={Logo} alt='' /> */}
-        <div style={{ marginLeft: '8rem' }}>
+        <div>
           <a href='#Acceuil'>
             <h1 className='logo'>BROKER</h1>
           </a>
         </div>
       </div>
-      <div id='Acceuil' className='navbar-links-container'>
+      <div className='navbar-links-container'>
         <a href='#Acceuil'>Acceuil</a>
         <a href='#Fonctionalités'>Fonctionalités</a>
         <a href='#Tarifs'>Tarifs</a>
+        <a href='#Devis'>Devis</a>
         <a href='#Contact'>Contact</a>
         <button type='button' className='primary-button'>
           Connexion
         </button>
       </div>
       <div className='navbar-menu-container'>
-        <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+        <HiOutlineBars3 size={35} onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor='right'>
         <Box

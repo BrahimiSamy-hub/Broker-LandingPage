@@ -1,25 +1,31 @@
-import contact from '../assets/broker1.png'
+import React from 'react'
+import { BiLogoFacebook } from 'react-icons/bi'
+import { BiLogoInstagram } from 'react-icons/bi'
 
 const Footer = () => {
   return (
-    <div id='Contact'>
-      <div className='gfg'>
-        <img src={contact} className='image-footer' />
-        <div className='text-container'>
-          <h3 className='font-contact'>CONTACTEZ-NOUS</h3>
-          <small className='font-contact'>SARL BROKER MARKETING </small>
-          <ul className='list-item-contact'>
-            <li>Centre d'affaire MASTERLY .Batna</li>
-            <li>Crm.broker.dz@gmail.com</li>
-            <li>
-              0779.09.44.55 <br />
-              0661.76.35.20
-            </li>
-            <li>Nous sommes à votre entière écoute.</li>
-          </ul>
-        </div>
+    <footer>
+      <div className='footer-content'>
+        <h3>Sarl Broker Marketing</h3>
+        <p>Copyright &copy; 2023</p>
+        <ul className='socials'>
+          <li>
+            <a href=''>
+              <i>
+                <BiLogoFacebook />
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href=''>
+              <i>
+                <BiLogoInstagram />
+              </i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </footer>
   )
 }
 
