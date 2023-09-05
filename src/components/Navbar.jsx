@@ -15,31 +15,45 @@ import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded'
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded'
 
 const Navbar = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+      setOpenMenu(false) // Close the menu after clicking a menu item
+    }
+  }
+
   const [openMenu, setOpenMenu] = useState(false)
   const menuOptions = [
     {
-      text: 'Home',
+      text: 'Acceuil',
       icon: <HomeIcon />,
+      id: 'Acceuil',
     },
     {
       text: 'Fonctionalités',
       icon: <InfoIcon />,
+      id: 'Fonctionalités',
     },
     {
       text: 'Tarifs',
       icon: <CommentRoundedIcon />,
+      id: 'Tarifs',
     },
     {
       text: 'Devis',
       icon: <CommentRoundedIcon />,
+      id: 'Devis',
     },
     {
       text: 'Contact',
       icon: <PhoneRoundedIcon />,
+      id: 'Contact',
     },
     {
       text: 'Connexion',
       icon: <ShoppingCartRoundedIcon />,
+      id: '',
     },
   ]
   return (
@@ -75,7 +89,7 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton onClick={() => scrollToSection(item.id)}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
