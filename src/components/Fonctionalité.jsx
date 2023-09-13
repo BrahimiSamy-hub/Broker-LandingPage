@@ -3,7 +3,7 @@ import {
   MdPersonSearch,
   MdVisibility,
   MdBorderColor,
-  MdOutlineAssignmentTurnedIn,
+  MdAssignmentTurnedIn,
 } from 'react-icons/md'
 import { CgPerformance } from 'react-icons/cg'
 import { BiSolidReport } from 'react-icons/bi'
@@ -18,7 +18,7 @@ const Data = [
   {
     id: '2',
     title: 'Gestion du plan de tournée',
-    icon: <MdOutlineAssignmentTurnedIn color='#00406f' />,
+    icon: <MdAssignmentTurnedIn color='#00406f' />,
   },
   {
     id: '3',
@@ -70,8 +70,8 @@ const Fonctionalité = () => {
             <div className='card' key={item.id}>
               <div className='heading'>
                 <svg
-                  width='35'
-                  height='35'
+                  width='40'
+                  height='40'
                   viewBox='0 0 20 20'
                   xmlns='http://www.w3.org/2000/svg'
                 >
