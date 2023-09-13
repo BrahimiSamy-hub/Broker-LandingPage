@@ -179,7 +179,6 @@ img {
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   color: white;
-
   font-family: 'ChauPhilomeneOne', sans-serif;
   padding-top: 65px;
   padding-bottom: 65px;
@@ -189,15 +188,11 @@ img {
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
+  font-family: 'Glacial Indifference', sans-serif;
+
   color: #eaebec;
   margin: 1.5rem 0rem;
   text-align: center;
-}
-
-.primary-subheading {
-  font-weight: 700;
-  color: #fe9e0d;
-  font-size: 1.15rem;
 }
 
 /* .work-section-wrapper {
@@ -285,7 +280,8 @@ img {
 }
 
 .font-contact {
-  font-family: 'Anonymous Pro', sans-serif;
+  font-family: 'Glacial Indifference', sans-serif;
+  font-weight: bold;
 }
 
 /* .container {
@@ -341,9 +337,6 @@ img {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.contact-phone {
 }
 
 .contact-row {
@@ -495,6 +488,23 @@ footer {
   .price-card {
     min-width: 350px;
   }
+  .Fonctionalités-section {
+    background-image: none;
+    background-size: cover;
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .hero h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .slang-hero {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   .nav-logo-container {
     max-width: 140px;
   }
@@ -537,6 +547,7 @@ footer {
     justify-content: space-between;
     width: 100%;
   }
+
   .about-background-image-container {
     display: none;
   }
@@ -609,13 +620,72 @@ footer {
 
 /* TAB */
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 600px) {
+  /* .logo-hero {
+    color: #00406f;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-top: -12rem;
+  } */
+  .hero {
+    gap: 2em;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    min-height: calc(100vh-93.6px);
+  }
+  .hero h1 {
+    color: #00406f;
+    display: flex;
+    justify-content: center;
+  }
+  .hero p {
+    color: #3c7b97;
+    font-family: 'ChauPhilomeneOne', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  .slang-hero {
+    color: #3c7b97;
+    font-weight: normal;
+    font-family: 'ChauPhilomeneOne', sans-serif;
+    /* margin-left: 7rem; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+  }
+  /* .hero {
+    background-image: url('./assets/Hero.png');
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 2em;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    min-height: calc(100vh-93.6px);
+    min-height: 100vh;
+  } */
+
+  .font-CRM {
+    font-family: 'Anonymous Pro', sans-serif;
+    padding-top: 6.6rem;
+    padding-left: 0.5rem;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .hero2 {
+    margin-top: 13.8rem;
+  }
   .navbar-links-container a {
     margin-right: 1rem;
     font-size: 1rem;
   }
   .primary-button {
     font-size: 1rem;
+  }
+  .logo {
+    margin-left: 3rem;
   }
   .font-CRM {
     font-size: 45px;
@@ -625,8 +695,8 @@ footer {
     font-weight: bold;
   }
   .logo-hero > h1 {
-    font-size: 70px;
-    margin-top: 4.5rem;
+    font-size: 8rem;
+    margin-top: 5.5rem;
   }
   .text-hero {
     bottom: 0;

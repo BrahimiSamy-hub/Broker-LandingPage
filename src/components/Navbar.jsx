@@ -10,9 +10,11 @@ import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import HomeIcon from '@mui/icons-material/Home'
 import InfoIcon from '@mui/icons-material/Info'
-import CommentRoundedIcon from '@mui/icons-material/CommentRounded'
-import PhoneRoundedIcon from '@mui/icons-material/PhoneRounded'
-import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded'
+
+import LoginIcon from '@mui/icons-material/Login'
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney'
+import PointOfSaleIcon from '@mui/icons-material/PointOfSale'
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone'
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
@@ -26,9 +28,9 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false)
   const menuOptions = [
     {
-      text: 'Acceuil',
+      text: 'Accueil',
       icon: <HomeIcon />,
-      id: 'Acceuil',
+      id: 'Accueil',
     },
     {
       text: 'Fonctionalités',
@@ -37,37 +39,37 @@ const Navbar = () => {
     },
     {
       text: 'Tarifs',
-      icon: <CommentRoundedIcon />,
+      icon: <AttachMoneyIcon />,
       id: 'Tarifs',
     },
     {
       text: 'Devis',
-      icon: <CommentRoundedIcon />,
+      icon: <PointOfSaleIcon />,
       id: 'Devis',
     },
     {
       text: 'Contact',
-      icon: <PhoneRoundedIcon />,
+      icon: <ContactPhoneIcon />,
       id: 'Contact',
     },
     {
       text: 'Connexion',
-      icon: <ShoppingCartRoundedIcon />,
+      icon: <LoginIcon />,
       id: '',
     },
   ]
   return (
-    <nav id='Acceuil'>
+    <nav id='Accueil'>
       <div className='nav-logo-container'>
         {/* <img src={Logo} alt='' /> */}
         <div>
-          <a href='#Acceuil'>
+          <a href='#Accueil'>
             <h1 className='logo'>BROKER</h1>
           </a>
         </div>
       </div>
       <div className='navbar-links-container'>
-        <a href='#Acceuil'>Acceuil</a>
+        <a href='#Accueil'>Accueil</a>
         <a href='#Fonctionalités'>Fonctionalités</a>
         <a href='#Tarifs'>Tarifs</a>
         <a href='#Devis'>Devis</a>

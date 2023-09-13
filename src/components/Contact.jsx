@@ -11,25 +11,47 @@ const Contact = () => {
       <div className='contact-container'>
         <div className='form-container'>
           <div>
-            <div className='contact-row'>
+            <div className='contact-row font-contact'>
               <div className='contact-box '>
                 <h2>
-                  <SiGooglemaps />
+                  <SiGooglemaps color='#00406f' size={60} />
                 </h2>
-                <p>Centre d'affaire MASTERLY</p>
+                <p
+                  style={{
+                    color: '#00406f',
+                    fontSize: '1.3rem',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  Centre d'affaire MASTERLY
+                </p>
               </div>
               <div className='contact-box'>
                 <h2>
-                  <MdEmail />
+                  <MdEmail color='#00406f' size={60} />
                 </h2>
-                <p>Crm.broker.dz@gmail.com</p>
+                <p
+                  style={{
+                    color: '#00406f',
+                    fontSize: '1.2rem',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  Crm.broker.dz@gmail.com
+                </p>
               </div>
             </div>
             <div className='contact-box contact-phone'>
               <h2>
-                <BsFillTelephoneFill />
+                <BsFillTelephoneFill color='#00406f' size={60} />
               </h2>
-              <p>
+              <p
+                style={{
+                  color: '#00406f',
+                  fontSize: '1.2rem',
+                  fontWeight: 'bold',
+                }}
+              >
                 0779.09.44.55 <br /> 0661.76.35.20
               </p>
             </div>

@@ -31,7 +31,7 @@ const Hero = () => {
           <p>Notre Engagement</p>
         </div>
       </div>
-      {screenWidth <= 600 && (
+      {screenWidth <= 999 && (
         <div className='row'>
           <img src={hero} alt='' />
         </div>

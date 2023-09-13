@@ -73,8 +73,8 @@ const Tarifs = () => {
         </h1>
         <div className='blasst-p'>
           <div className='primary-text '>
-            Combien d'utilisateurs vous avez ?
-            <sub> (Délégués + superviseurs + kam + gérant)</sub>
+            Combien d'utilisateurs vous avez ?<br />
+            <sub> Délégués + superviseurs + kam + gérant</sub>
             <div>
               {/* data-aos='flip-up' */}
               <input
