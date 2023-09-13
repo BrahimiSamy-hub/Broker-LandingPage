@@ -1,5 +1,10 @@
 import { ImStatsBars } from 'react-icons/im'
-import { MdPersonSearch, MdVisibility } from 'react-icons/md'
+import {
+  MdPersonSearch,
+  MdVisibility,
+  MdBorderColor,
+  MdOutlineAssignmentTurnedIn,
+} from 'react-icons/md'
 import { CgPerformance } from 'react-icons/cg'
 import { BiSolidReport } from 'react-icons/bi'
 import { FaFileInvoiceDollar } from 'react-icons/fa'
@@ -13,7 +18,7 @@ const Data = [
   {
     id: '2',
     title: 'Gestion du plan de tournée',
-    icon: <FaFileInvoiceDollar color='#00406f' />,
+    icon: <MdOutlineAssignmentTurnedIn color='#00406f' />,
   },
   {
     id: '3',
@@ -28,7 +33,7 @@ const Data = [
   {
     id: '5',
     title: 'Gestion des bons de commande',
-    icon: <FaFileInvoiceDollar color='#00406f' />,
+    icon: <MdBorderColor color='#00406f' />,
   },
   {
     id: '6',
