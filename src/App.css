@@ -406,7 +406,7 @@ img {
 
 .background-fonct {
   background-color: black;
-  background-image: url('./assets/bg-fonct.png');
+  background-image: url('./assets/bg-fonct.svg');
   background-repeat: no-repeat, repeat;
   width: 100%;
   min-height: 100vh;
@@ -593,7 +593,7 @@ footer {
     font-size: 2rem;
   }
   .hero {
-    background-image: url('./assets/Hero.png');
+    background-image: url('./assets/Hero.webp');
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;
@@ -655,17 +655,6 @@ footer {
     margin-bottom: 2rem;
     font-size: 2.2rem;
   }
-  /* .hero {
-    background-image: url('./assets/Hero.png');
-    background-repeat: no-repeat, repeat;
-    background-position: center;
-    background-size: cover;
-    gap: 2em;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-    min-height: calc(100vh-93.6px);
-    min-height: 100vh;
-  } */
 
   .font-CRM {
     font-family: 'Anonymous Pro', sans-serif;

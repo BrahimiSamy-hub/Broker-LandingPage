@@ -10,14 +10,14 @@ const Footer = () => {
         <p>Copyright &copy; 2023</p>
         <ul className='socials'>
           <li>
-            <a href=''>
+            <a href='#'>
               <i>
                 <BiLogoFacebook />
               </i>
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='#'>
               <i>
                 <BiLogoInstagram />
               </i>

@@ -1,4 +1,3 @@
-// import contact from '../assets/broker1.png'
 import { MdEmail } from 'react-icons/md'
 import { SiGooglemaps } from 'react-icons/si'
 import { BsFillTelephoneFill } from 'react-icons/bs'
@@ -59,6 +58,7 @@ const Contact = () => {
         </div>
         <div className='map'>
           <iframe
+            title='Maps'
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.9542038279524!2d6.183302774871398!3d35.530129372636466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f411c7d47b81cd%3A0x6ce5d30e2e9442a!2sMasterly!5e0!3m2!1sfr!2sdz!4v1693422590421!5m2!1sfr!2sdz'
             allowFullScreen=''
             loading='lazy'

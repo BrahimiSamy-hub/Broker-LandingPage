@@ -1,4 +1,4 @@
-import hero from '../assets/ORL58511.png'
+import hero from '../assets/ORL58511.webp'
 import React, { useEffect, useState } from 'react'
 
 const Hero = () => {
