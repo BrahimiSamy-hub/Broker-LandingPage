@@ -46,7 +46,6 @@
 }
 
 * {
-  /* outline: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -85,7 +84,6 @@ body {
     rgba(0, 64, 111, 1) 0%,
     rgb(255, 255, 255) 100%
   );
-  /* background: linear-gradient(to bottom, white, #00406f, #3c7b97); */
 }
 
 nav {
@@ -339,12 +337,12 @@ img {
   flex-direction: column;
 }
 
-.contact-row {
+/* .contact-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-}
+} */
 
 .contact-container {
   max-width: 960px;
@@ -485,6 +483,12 @@ footer {
 /* TLPHN  */
 
 @media (max-width: 800px) {
+  .contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
   .price-card {
     min-width: 350px;
   }
@@ -543,6 +547,12 @@ footer {
 @media (max-width: 600px) {
   .contact-row {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .contact-row {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
@@ -577,6 +587,19 @@ footer {
 /* PC */
 
 @media (min-width: 1000px) {
+  .map iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .contact-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background: #eaebec5b;
+    border-radius: 0.5rem;
+  }
   .logo-hero {
     color: #00406f;
     display: flex;
@@ -621,6 +644,12 @@ footer {
 /* TAB */
 
 @media (max-width: 1000px) and (min-width: 600px) {
+  .contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
   /* .logo-hero {
     color: #00406f;
     display: flex;

@@ -10,7 +10,6 @@ import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import HomeIcon from '@mui/icons-material/Home'
 import InfoIcon from '@mui/icons-material/Info'
-
 import LoginIcon from '@mui/icons-material/Login'
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney'
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale'
@@ -21,11 +20,12 @@ const Navbar = () => {
     const section = document.getElementById(sectionId)
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' })
-      setOpenMenu(false) // Close the menu after clicking a menu item
+      setOpenMenu(false)
     }
   }
 
   const [openMenu, setOpenMenu] = useState(false)
+
   const menuOptions = [
     {
       text: 'Accueil',
