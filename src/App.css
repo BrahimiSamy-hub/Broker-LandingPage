@@ -643,7 +643,7 @@ footer {
 
 /* TAB */
 
-@media (max-width: 1000px) and (min-width: 600px) {
+@media (max-width: 1024px) and (min-width: 600px) {
   .contact-row {
     display: flex;
     flex-direction: row;
