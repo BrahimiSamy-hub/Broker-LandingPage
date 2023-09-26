@@ -5,7 +5,6 @@ import {
   MdBorderColor,
   MdAssignmentTurnedIn,
 } from 'react-icons/md'
-import { CgPerformance } from 'react-icons/cg'
 import { BiSolidReport } from 'react-icons/bi'
 import { FaFileInvoiceDollar } from 'react-icons/fa'
 
@@ -65,7 +64,6 @@ const Fonctionalité = () => {
       </h1>
       <div className='main'>
         <div className='main-fonct'>
-          {/* data-aos='flip-up' */}
           {Data.map((item) => (
             <div className='card' key={item.id}>
               <div className='heading'>

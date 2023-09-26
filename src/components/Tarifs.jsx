@@ -50,12 +50,10 @@ const Tarifs = () => {
   return (
     <div className='work-section-wrapper' id='Tarifs'>
       <div className='work-section-top'>
-        {/* data-aos='fade-up' */}
         <h1 className='primary-heading'>NOS TARIFS</h1>
         <p className='primary-text'>Choisir le plan qui répond a vos besoin.</p>
       </div>
       <div className='work-section-bottom'>
-        {/* data-aos='flip-up' */}
         {tarifsData.map((data) => (
           <div className='work-section-info' key={data.id}>
             <h2>{data.title}</h2>
@@ -67,7 +65,6 @@ const Tarifs = () => {
         ))}
       </div>
       <div className='work-section-top'>
-        {/* data-aos='fade-up' */}
         <h1 className='primary-heading' id='Devis'>
           DEVIS EN LIGNE
         </h1>
@@ -76,7 +73,6 @@ const Tarifs = () => {
             Combien d'utilisateurs vous avez ?<br />
             <sub> Délégués + superviseurs + kam + gérant</sub>
             <div>
-              {/* data-aos='flip-up' */}
               <input
                 id='devis'
                 type='number'
@@ -88,7 +84,6 @@ const Tarifs = () => {
           </label>
         </div>
         <div className='primary-text price'>
-          {/* data-aos='flip-up' */}
           <div className='price-card'>
             {formatCurrencyDZD(totalPrice)} &nbsp; / &nbsp; Mois
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -6,7 +6,6 @@ const Contact = () => {
   return (
     <section className='work-section-top Contact' id='Contact'>
       <h1 className='primary-heading'>CONTACTEZ-NOUS</h1>
-      {/* data-aos='flip-up' */}
       <div className='contact-container'>
         <div className='form-container'>
           <div>
@@ -71,20 +70,3 @@ const Contact = () => {
 }
 
 export default Contact
-{
-  /* <div classNameName=''>
-        <div classNameName='text-container' data-aos='flip-up'>
-          <h3 classNameName='font-contact'>CONTACTEZ-NOUS</h3>
-          <small classNameName='font-contact'>SARL BROKER MARKETING </small>
-          <ul classNameName='list-item-contact'>
-            <li>Centre d'affaire MASTERLY .Batna</li>
-            <li>Crm.broker.dz@gmail.com</li>
-            <li>
-              0779.09.44.55 <br />
-              0661.76.35.20
-            </li>
-            <li>Nous sommes à votre entière écoute.</li>
-          </ul>
-        </div>
-      </div> */
-}

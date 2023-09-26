@@ -61,7 +61,6 @@ const Navbar = () => {
   return (
     <nav id='Accueil'>
       <div className='nav-logo-container'>
-        {/* <img src={Logo} alt='' /> */}
         <div>
           <a href='#Accueil'>
             <h1 className='logo'>BROKER</h1>

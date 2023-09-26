@@ -21,7 +21,6 @@ const Hero = () => {
       <div className=''>
         <div className='logo-hero'>
           <h1 className='font-broker'>BROKER</h1>
-          {/* <p className='font-CRM'>CRM</p> */}
         </div>
         <div className='slang-hero'>
           <p className='text-between'>Votre Succès,</p>
