@@ -72,7 +72,7 @@ img {
 .App {
   /* min-height: 100vh;
   width: 85vw; */
-  max-width: 2110px;
+  max-width: 100%;
   margin: 0rem auto;
 }
 

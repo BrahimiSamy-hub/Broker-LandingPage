@@ -72,19 +72,20 @@ const Tarifs = () => {
           DEVIS EN LIGNE
         </h1>
         <div className='blasst-p'>
-          <div className='primary-text '>
+          <label id='tarif' className='primary-text '>
             Combien d'utilisateurs vous avez ?<br />
             <sub> Délégués + superviseurs + kam + gérant</sub>
             <div>
               {/* data-aos='flip-up' */}
               <input
+                id='devis'
                 type='number'
                 value={userCount}
                 onChange={handleUserCountChange}
                 className='input-tarifs'
               />
             </div>
-          </div>
+          </label>
         </div>
         <div className='primary-text price'>
           {/* data-aos='flip-up' */}
